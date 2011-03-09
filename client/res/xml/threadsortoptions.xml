@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="androidchan_preferences"
+                  android:title="@string/preferences_title"
+                  android:summary="@string/preferences_summary">
+  <ListPreference android:key="@string/sort_preference_key"
+                  android:title="@string/sort_preference_title"
+                  android:summary="@string/sort_preference_summary"
+                  android:dialogTitle="@string/sort_preference_title"
+                  android:defaultValue="@string/sort_preference_default"
+                  android:entries="@array/thread_sort_options"
+                  android:entryValues="@array/thread_sort_options_values" />
+</PreferenceScreen>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widget28"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#00000000" 
+              android:scrollbars="vertical"
+              android:scrollbarStyle="outsideOverlay"
+              >
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widget28"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#00000000">
+  <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/in_reply_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:textSize="14dip"
+            android:textColor="@color/red"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/widget28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#00000000">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/post_editor_selected_image"
+               android:layout_width="128px"
+               android:layout_height="128px"
+               android:scaleType="fitXY"
+               android:layout_gravity="center_vertical"
+               />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/post_editor_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+      <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:id="@+id/radio_button_no_image"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="No image"
+                   />
+      <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:id="@+id/radio_button_from_camera"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Image from camera"
+                   />
+      <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:id="@+id/radio_button_from_phone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Image from phone"
+                   />
+    </RadioGroup>
+  </LinearLayout>
+  <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/post_body"
+            android:hint="Type post here"
+			android:maxLines="4"
+			android:imeOptions="actionDone"
+			android:minLines="4"
+			android:maxLength="256"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:textSize="18sp"
+            />
+  <Button xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/post_button"
+          android:layout_width="150px"
+          android:layout_height="wrap_content"
+          android:text="Post"
+          />
+  </LinearLayout>
+</ScrollView>

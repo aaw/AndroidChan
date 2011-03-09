@@ -1,0 +1,16 @@
+This is the server-side code for AndroidChan. The server requires the following 
+software (I'm running it from Ubuntu, so these instructions are necessarily biased 
+towards that platform with examples):
+
+- MongoDB (http://www.mongodb.org/downloads)
+- Python 2.6 or higher (sudo apt-get install python)
+  - pymongo (http://api.mongodb.org/python/1.9%2B/installation.html)
+  - PIL (sudo apt-get install python-imaging)
+  - python-curl (sudo apt-get install python-pycurl)
+- Tornado 1.1 or higher (www.tornadoweb.org)
+
+Once you have all this installed, you're ready to start serving the imageboard. Run 
+`python android-chan.py` to start serving on port 80 or pass a different port as an
+argument. To run the admin server, run `python admin.py` to serve on port 443. I run
+both servers behind nginx (wiki.nginx.org), which you'll probably want to do anyway
+to enable SSL for the admin server.

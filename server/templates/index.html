@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>MobileChan admin console</title>
+   </head>
+   <body>
+     <ul>
+       {% for thread in threads %}
+       <div id="thread">
+	 <div id="thread_id">
+	   <a href="/threads/{{ thread['thread_id'] }}">{{ thread['thread_id']}}</a>
+	   <form action="/kill_thread/{{ thread['thread_id'] }}" 
+		 method="post">
+	     <input type="submit" value="Kill thread" />
+	     <input type="checkbox" name="cbox" value="Doublecheck">I'm sure</input>
+	   </form>
+	 </div>
+	 {% if thread['image_id'] is not None %}
+	 <div id="image">
+	   <img src="/1/img/thumbnail/{{ thread['image_id'] }}">
+	 </div>
+	 {% end %}
+	 <div id="body">
+	   {{ escape(thread['body']) }}
+	 </div>
+       </div>
+       <hr>
+       {% end %}
+     </ul>
+   </body>
+ </html>

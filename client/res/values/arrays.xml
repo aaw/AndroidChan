@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="thread_sort_options">
+  <item>Latest threads (worldwide)</item>
+  <item>Latest threads (local)</item>
+  <item>Closest threads to you</item>
+</string-array>
+<string-array name="thread_sort_options_values">
+  <item>global_latest</item>
+  <item>local_latest</item>
+  <item>closest</item> 
+</string-array>
+</resources>

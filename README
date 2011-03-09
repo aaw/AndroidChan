@@ -1,0 +1,9 @@
+AndroidChan
+
+An imageboard for android. This code is essentially the client and server code
+for MobileChan (https://market.android.com/details?id=com.mobilechan.client)
+
+Beware, the Android client code is pretty rough and you should treat it as a
+proof-of-concept. It works, but it was my first shot at programming Android...
+
+This code is all released under the WTFPL (http://en.wikipedia.org/wiki/WTFPL)

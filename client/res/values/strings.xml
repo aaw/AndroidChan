@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidChan</string>
+    <string name="app_threads_label">AndroidChan</string>
+    <string name="app_posts_label">AndroidChan: posts</string>
+    <string name="app_make_post_label">AndroidChan: make a post</string>
+    <string name="app_view_image">AndroidChan: view image</string>
+    <string name="refresh">Refresh</string>
+    <string name="new_thread">New thread</string>
+    <string name="about">About</string>
+    <string name="refreshing_closest_threads">Loading threads...</string>
+    <string name="loading_posts">Loading posts...</string>
+    <string name="loading_image">Downloading image...</string>
+    <string name="posting">Posting...</string>
+    <string name="blank"></string>
+    <string name="could_not_connect_for_threads">Couldn\'t connect to server to get threads. Please try again in a few seconds.</string>
+    <string name="could_not_connect_for_posts">Couldn\'t connect to server to get posts. Please try again in a few seconds.</string>
+    <string name="could_not_connect_to_post">Couldn\'t connect to server to post. Please try again in a few seconds.</string>
+    <string name="warning_empty_post">Add some content (either an image or some text) before posting.</string>
+    <string name="could_not_download_image">Could not download image. Please try again in a few seconds.</string>
+    <string name="image_download_cancelled">Image download cancelled</string>
+    <string name="post_cancelled">Post cancelled</string>
+    <string name="attempting_to_cancel_post">Attempting to cancel post...</string>
+    <string name="post_successful">Post successful</string>
+    <string name="processing_image">Processing image...</string>
+    <string name="in_reply_to">In reply to: </string>
+    <string name="save_image">Save image</string>
+    <string name="image_saved">Saved to AndroidChan folder in gallery</string>
+    <string name="image_could_not_be_saved">Can\'t save; no image loaded</string>
+    <string name="sd_card_not_mounted">SD card isn\'t mounted. Can\'t save file.</string>
+    <string name="welcome_message">Press menu to start a new thread</string>
+    <string name="need_to_set_location_title"></string>
+    <string name="need_to_set_location_msg">AndroidChan wants to use your approximate location to get posts closest to you.\n\nTo allow this, check \"Use wireless networks\" on the security settings page.\n\nIf you don\'t allow this, we\'ll just use New York, NY as your location.</string>
+    <string name="OK">OK</string>
+    <string name="do_it_dude">Check \"Use wireless networks\" if you want to share your location with AndroidChan</string>
+    <string name="take_me_to_settings">Let me edit my settings</string>
+    <string name="using_nyc_location">Couldn\'t determine location from Wi-Fi and/or mobile networks. Using New York, NY as your location.</string>
+    <string name="preferences">Preferences</string>
+    <string name="analyzing_wait_message">Analyzing, please wait...</string>
+    <string name="androidchan_preferences">AndroidChan Preferences</string>
+    <string name="preferences_title">Preferences</string>
+    <string name="preferences_summary">AndroidChan preferences</string>
+    <string name="sort_preference_key">sort_preference</string>
+    <string name="sort_preference_title">Thread sorting</string>
+    <string name="sort_preference_summary">Choose whether to see closest threads, latest threads, or a mix of both on the main page.</string>
+    <string name="sort_preference_default">global_latest</string>
+</resources>

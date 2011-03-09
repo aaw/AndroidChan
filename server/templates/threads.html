@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <title>Thread view: {{ thread_id }}</title>
+   </head>
+   <body>
+     <h1>Thread {{ thread_id }}</h1>
+     <ul>
+       {% for post in posts %}
+       <div id="thread">
+	 <div id="thread_id">
+	   {{ post['_id']}}
+	 </div>
+	 {% if post['image_id'] is not None %}
+	 <div id="image">
+	   <a href="/bigimage/{{ post['image_id'] }}">
+	     <img src="/1/img/thumbnail/{{ post['image_id'] }}">
+	   </a>
+	   <form action="/block_image/{{ thread_id }}/{{ post['image_id'] }}" 
+		 method="post">
+	     <input type="submit" value="Block image" />
+	     <input type="checkbox" name="cbox" value="Doublecheck">I'm sure</input>
+	   </form>
+	 </div>
+	 {% end %}
+	 <div id="body">
+	   {{ escape(post['body']) }}
+	 </div>
+	 <div id="location">
+	   <a href="http://maps.google.com/maps?z=9&output=embed&sll={{ post['location'][0] }},{{ post['location'][1] }}&sspn={{ post['location'][0] }},{{ post['location'][1] }}&t=h&f=q&source=s_q&q={{ post['location'][0] }},{{ post['location'][1] }}">location</a>
+	 </div>
+       </div>
+       <hr>
+       {% end %}
+       <h1><a href="/">Back</a></h1>
+     </ul>
+   </body>
+ </html>

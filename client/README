@@ -1,0 +1,6 @@
+Look at .classpath for the lib dependencies you'll need to build.
+
+Search for "!!!" to find anything that you'll need to replace in order to build
+your own client app. You'll also want to name it something different from
+"com.androidchan.client" if you want to put it on the Android market, since
+that name needs to be unique.
